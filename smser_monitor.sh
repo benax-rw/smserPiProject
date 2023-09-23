@@ -11,7 +11,7 @@ check_process() {
 }
 
 # Define the process name
-process_name="python3 /home/pi/sim900/smser_out.py"
+process_name="python3 /home/pi/smserPiProject/sim900/smser_out.py"
 
 # Check if the process is already running
 if check_process "$process_name"; then
@@ -19,6 +19,6 @@ if check_process "$process_name"; then
 else
   # Start the process if it's not running
   echo "Starting the process..."
-  python3 /home/pi/sim900/smser_out.py &
+  python3 /home/pi/smserPiProject/sim900/smser_out.py &
 fi
 

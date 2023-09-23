@@ -18,7 +18,7 @@ def display_new_content(file_path, last_timestamp):
     return last_timestamp
 
 if __name__ == "__main__":
-    file_path = "/home/pi/sim900/report.txt"
+    file_path = "/home/pi/smserPiProject/sim900/report.txt"
     last_timestamp = None
 
     try:

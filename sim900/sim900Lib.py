@@ -102,7 +102,7 @@ class SIM900:
                         if recipient != "null" and recipient != prev_recipient and msg != prev_msg:
                             self.sendSMS(recipient, msg)
                             time.sleep(1)
-                            f=open("/home/pi/sim900/report.txt","a")
+                            f=open("/home/pi/smserPiProject/sim900/report.txt","a")
                             f.write("Time: "+timestamp+"\n")
                             f.write("Sent to: "+recipient+"\n")
                             f.write("Message: "+msg+"\n")
